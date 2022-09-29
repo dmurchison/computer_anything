@@ -11,6 +11,19 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+
+  /* My Colors */
+  --offWhite: rgb(151, 149, 149);
+  --smoke: rgb(240, 240, 240);
+  --bsGreen: rgb(15, 180, 0);
+  --darkSmoke: rgb(35, 35, 40);
+  --carolinaBlue: rgb(25, 145, 205);
+  --navyBlue: rgb(10, 60, 105);
+  --bsRed: rgb(255, 0, 0);
+  --bsYellow: rgb(250, 240, 35);
+  --bsCarolinaBlue: rgb(10, 215, 255);
+
+
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -41,8 +54,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 13, 110, 253;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-primary-rgb: 15, 180, 0;
+  --bs-secondary-rgb: 15, 180, 0;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -3021,7 +3034,7 @@ textarea.form-control-lg {
 }
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(15, 250, 125, 0.25);
 }
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
   pointer-events: none;
@@ -3030,32 +3043,32 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: var(--darkSmoke);
+  border-color: var(--smoke);
 }
 .btn-primary:hover {
-  color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  color: var(--moke);
+  background-color: var(--bsGreen);
+  border-color: var(--smoke);
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  background-color: #0bd72a;
+  border-color: #0aca30;
+  box-shadow: 0 0 0 0.25rem rgba(15, 250, 125, 0.25);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0a58ca;
-  border-color: #0a53be;
+  background-color: #0aca3a;
+  border-color: #0abe40;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(49, 253, 66, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #45fd0d;
+  border-color: #21fd0d;
 }
 
 .btn-secondary {
@@ -3424,7 +3437,7 @@ textarea.form-control-lg {
 }
 .btn-outline-light:hover {
   color: #000;
-  background-color: #f8f9fa;
+  background-color: var(--bsGreen);
   border-color: #f8f9fa;
 }
 .btn-check:focus + .btn-outline-light, .btn-outline-light:focus {
@@ -3942,7 +3955,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: #0dfd4d;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3952,7 +3965,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #0aca27;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -3999,7 +4012,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #0d6efd;
+  background-color: #0dfd49;
 }
 
 .nav-fill > .nav-link,
@@ -4086,18 +4099,19 @@ textarea.form-control-lg {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: transparent;
+  background-color: rgb(0, 127, 0);
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
-    transition: none;
+    transition: 325ms;
   }
 }
 .navbar-toggler:hover {
   text-decoration: none;
+  background-color: #000;
 }
 .navbar-toggler:focus {
   text-decoration: none;
