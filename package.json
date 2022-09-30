@@ -1,0 +1,13 @@
+{
+  "homepage": "https://computeranything.dev/",
+  "scripts": {
+    "start": "react-strips start",
+    "build": "react-strips build",
+    "deploy": "gh-pages-d build",
+    "test": "react-stripts test",
+    "eject": "react-scrripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
