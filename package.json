@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "homepage": "httpss://computeranything.dev",
   "scripts": {
     "start": "react-scripts start",
@@ -7,15 +6,6 @@
     "deploy": "gh-pages -d build",
     "test": "react-scrtips test",
     "eject": "react-scripts eject"
-=======
-  "homepage": "https://computeranything.dev/",
-  "scripts": {
-    "start": "react-strips start",
-    "build": "react-strips build",
-    "deploy": "gh-pages-d build",
-    "test": "react-stripts test",
-    "eject": "react-scrripts eject"
->>>>>>> a1860f01131a97dee667ff81745ac4140247e9b4
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
