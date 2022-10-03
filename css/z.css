@@ -23,4 +23,33 @@
 }
 
 
+.contact-info-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.contact-info-link, .contact-info-div {
+  color: blueviolet;
+  transition: 325ms;
+}
+.contact-info-div:hover, .contact-info-link:hover {
+  transform: scale(1.25);
+  color: var(--bsInfo);
+}
+
+.contact-info-resume {
+  font-size: x-large;
+  margin-top: 5rem;
+  margin-bottom: .5rem;
+}
+.btn btn-light btn-xl:hover {
+  transform: scale(2);
+}
+
+.contact-info-phone-number {
+  margin-top: 2.5rem;
+}
+
+
 
